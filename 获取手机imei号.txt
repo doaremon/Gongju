@@ -3,3 +3,9 @@ public static String getphoneimei(Context context){
 		String imei=telephonyManager.getDeviceId();
 		return imei;
 	}
+
+
+这里需要添加权限
+
+<!-- 获取手机的imei -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
