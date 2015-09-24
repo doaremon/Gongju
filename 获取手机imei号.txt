@@ -1,0 +1,5 @@
+public static String getphoneimei(Context context){
+		TelephonyManager telephonyManager= (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+		String imei=telephonyManager.getDeviceId();
+		return imei;
+	}
