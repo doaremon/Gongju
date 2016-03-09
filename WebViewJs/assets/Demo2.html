@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style type="text/css">
+
+        #getdiv{
+
+            background-color: aqua;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+    
+       function ceshi(){
+            alert("this is ceshi");
+        }
+
+        function myclick(){
+         var u = document.getElementById("getdiv").getAttribute('value');
+         client.showtoast(u);
+        }
+
+    </script>
+
+
+</head>
+<body>
+
+<input type="button" value="ceshi" onclick="ceshi()" />
+
+<div id="getdiv" onclick="myclick()" value="1024">
+
+
+    this is a div;
+    this is a div;
+    this is a div;
+    this is a div;
+    this is a div;
+    this is a div;
+    this is a div;
+    this is a div;
+    this is a div;
+    this is a div;
+</div>
+
+
+</body>
+</html>
